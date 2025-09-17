@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #5f1ba3, #1D1D3F);
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    flex-wrap: wrap; /* permite quebrar linha em telas pequenas */
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ff33ff;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header nav a {
+    margin-left: 20px;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ff33ff;
+}
+
+header nav .btn {
+    background-color: #ff33ff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+/* APRESENTAÇÃO */
+.apresentacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap; /* quebra em colunas menores */
+    text-align: center;
+}
+
+.texto-apresentacao {
+    max-width: 600px;
+}
+
+.texto-apresentacao h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.texto-apresentacao h2 {
+    font-size: 1.5rem;
+    color: #ff33ff;
+    margin-bottom: 20px;
+}
+
+.texto-apresentacao p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.texto-apresentacao .buttons a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.texto-apresentacao .buttons .primary {
+    background-color: #ff33ff;
+    color: #fff;
+}
+
+.texto-apresentacao .buttons .secondary {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.texto-apresentacao .buttons .primary:hover {
+    background-color: #e600e6;
+}
+
+.texto-apresentacao .buttons .secondary:hover {
+    background-color: #fff;
+    color: #1D1D3F;
+}
+
+/* IMAGEM ILUSTRATIVA */
+.imagen-ilustrativa img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+/* NAVBAR SERVICES */
+.services-bar {
+    background-color: #0f4ce0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.services-bar span {
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* TEAM */
+.team {
+    text-align: center;
+    padding: 50px;
+}
+
+.team h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    border: 2px solid #fff;
+    display: inline-block;
+    padding: 10px 38px;
+    border-radius: 8px;
+}
+
+.team-conteiner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta automaticamente */
+    gap: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.menbro {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    min-height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.menbro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.menbro img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid #fff;
+}
+
+/* SOBRE NÓS */
+.sobre-nos {
+    padding: 60px 20px;
+}
+
+.Sobre-conteiner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.sobre-texto h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.sobre-texto h2 span {
+    color: #ff33ff;
+}
+
+.sobre-texto p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.imagem-sobre img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 50% / 40%;
+    padding: 20px;
+}
+
+/* SERVIÇOS */
+.nossos-servicos h2 {
+    font-size: 2.2rem;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.servicos-conteiner {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.slides {
+    display: flex;
+    gap: 40px;
+    width: calc(300px * 6 + 30px * 5);
+    animation: deslizar 20s linear infinite;
+}
+
+.card {
+    flex: 0 0 300px;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #fff;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+@keyframes deslizar {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* CONTATOS */
+.contatos {
+    margin-top: 20px;
+    background-color: #0f4ce0;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contatos .contatos-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contatos h2 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.contatos .contatos-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.contatos .contatos-icons img:hover {
+    transform: scale(1.2);
+}
+
+.contatos p {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .texto-apresentacao h1 {
+        font-size: 2rem;
+    }
+
+    .texto-apresentacao h2 {
+        font-size: 1.2rem;
+    }
+
+    .slides {
+        animation: none; /* em telas pequenas, pode desativar o movimento automático */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        flex: 1 1 250px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .texto-apresentacao h1 {
+        font-size: 1.8rem;
+    }
+
+    .sobre-texto h2 {
+        font-size: 1.6rem;
+    }
+}
