@@ -1,223 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
-     <header>
-        <div class="logo">CodeHub Jr</div>
-        <nav>
-            <a href="#">Início</a>
-            <a href="#">Colaboradores</a>
-            <a href="#">Sobre Nós</a>
-            <a href="#">Contatos</a>
-            <a href="#" class="btn">Serviços</a>
-        </nav>
+
+    <header class="cabecalho">
+    <nav class="cabecalho-navegacao">
+        <div class="logo">
+            <img src="arquivos_imagens/logo.png" alt="CodeHub Logo">
+            <span>CodeHub</span>
+        </div>
+
+        <div class="menu-links">
+            <a href="#sobre">Sobre nós</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato" class="botao-contato">Contato</a>
+        </div>
+    </nav>
+
+
+        <h1 class="cabecalho-titulo">Soluções em Desenvolvimento de Software para sua Empresa</h1>
+        <p class="cabecalho-subtitulo">Equipe especializada em criar sistemas web, mobile e integrações personalizadas.</p>
+
+        <div class="cabecalho-botoes">
+            <button class="botao-principal">Conheça nossos serviços</button>
+            <button class="botao-secundario">Fale conosco</button>
+        </div>
+
+        <div class="imagem-container">
+             <img src="arquivos_imagens/tecnologia1.jpg" alt="Equipe trabalhando com software">
+        </div>     
     </header>
 
-    <section class="apresentacao">
-        <div class="texto-apresentacao">
-            <h1>Code Hub</h1>
-            <h2>Services</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus harum ut quo? Consequuntur, sequi repellat vitae esse eaque unde nesciunt dolor ipsa in, iusto molestiae facilis sapiente enim vel dignissimos?</p>
-            <div class="buttons">
-                <a href="#" class="primary">Ver Nossos Serviços</a>
-                <a href="#" class="secondary">Contatos</a>
-            </div>
-        </div>
-        <div class="imagen-ilustrativa">
-            <img src="arquivos_imagens/tecnologia1.jpg" alt="imagen-ilustrativa">
-        </div>
-    </section>
-
-    <section class="services-bar">
-        <span>Landing Pages</span>
-        <span>-</span>
-        <span>Design</span>
-        <span>-</span>
-        <span>Sistema Web</span>
-        <span>-</span>
-        <span>Desenvolvimento de Software</span>
-        <span>-</span>
-        <span>Gestão de Projetos</span>
-    </section>
-
-    <section class="team">
+    <section class="secao-time" id="time">
         <h2>Nosso time</h2>
-        <p>Explore Alguns de nossos Colaboradores</p>
-
-        <div class=" team-conteiner">
-            <article class="menbro">
-                <img src="arquivos_imagens/user.png" alt="usuario">
-                <div class="informacoes"> 
+        <div class="cartoes-time">
+            <div class="cartao-membro">
+                <img src="images/joao.jpg" alt="João Ferreira">
                 <h3>João Ferreira</h3>
-                <p>Desenvolvedor de Software</p>
-                </div>
-            </article>
-
-            <article class="menbro">
-                <img src="arquivos_imagens/user.png" alt="usuario">
-                <div class="informacoes"> 
-                <h3>João Ferreira</h3>
-                <p>Desenvolvedor de Software</p>
-                </div>
-            </article>
-
-            <article class="menbro">
-                <img src="arquivos_imagens/user.png" alt="usuario">
-                <div class="informacoes"> 
-                <h3>João Ferreira</h3>
-                <p>Desenvolvedor de Software</p>
-                </div>
-            </article>
-
-            <article class="menbro">
-                <img src="arquivos_imagens/user.png" alt="usuario">
-                <div class="informacoes"> 
-                <h3>João Ferreira</h3>
-                <p>Desenvolvedor de Software</p>
-                </div>
-            </article>
-
-            <article class="menbro">
-                <img src="arquivos_imagens/user.png" alt="usuario">
-                <div class="informacoes"> 
-                <h3>João Ferreira</h3>
-                <p>Desenvolvedor de Software</p>
-                </div>
-            </article>
-
-            <article class="menbro">
-                <img src="arquivos_imagens/user.png" alt="usuario">
-                <div class="informacoes"> 
-                <h3>João Ferreira</h3>
-                <p>Desenvolvedor de Software</p>
-                </div>
-            </article>
-
-            <article class="menbro">
-                <img src="arquivos_imagens/user.png" alt="usuario">
-                <div class="informacoes"> 
-                <h3>João Ferreira</h3>
-                <p>Desenvolvedor de Software</p>
-                </div>
-            </article>
-
-            <article class="menbro">
-                <img src="arquivos_imagens/user.png" alt="usuario">
-                <div class="informacoes"> 
-                <h3>João Ferreira</h3>
-                <p>Desenvolvedor de Software</p>
-                </div>
-            </article>
-
-            <article class="menbro">
-                <img src="arquivos_imagens/user.png" alt="usuario">
-                <div class="informacoes"> 
-                <h3>João Ferreira</h3>
-                <p>Desenvolvedor de Software</p>
-                </div>
-            </article>
-            
-            <article class="menbro">
-                <img src="arquivos_imagens/user.png" alt="usuario">
-                <div class="informacoes"> 
-                <h3>João Ferreira</h3>
-                <p>Desenvolvedor de Software</p>
-                </div>
-            </article>
-
-            
+                <p>Full Stack</p>
+            </div>
+            <div class="cartao-membro">
+                <img src="images/ana.jpg" alt="Ana Lima">
+                <h3>Ana Lima</h3>
+                <p>UX/UI Designer</p>
+            </div>
+            <div class="cartao-membro">
+                <img src="images/carlos.jpg" alt="Carlos Mendes">
+                <h3>Carlos Mendes</h3>
+                <p>Mobile Developer</p>
+            </div>
+            <div class="cartao-membro">
+                <img src="images/julia.jpg" alt="Julia Santos">
+                <h3>Julia Santos</h3>
+                <p>QA Tester</p>
+            </div>
+            <div class="cartao-membro">
+                <img src="images/pedro.jpg" alt="Pedro Rocha">
+                <h3>Pedro Rocha</h3>
+                <p>Project Manager</p>
+            </div>
         </div>
     </section>
 
-    <section class="sobre-nos">
-        <div class="Sobre-conteiner">
-            <div class="sobre-texto">
-                <h2>Sobre <span>Nós</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nobis id numquam, necessitatibus praesentium aut optio consequatur? Consequuntur perferendis architecto iste eum suscipit numquam, maxime atque distinctio, ex dicta reprehenderit!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis est excepturi, recusandae debitis ullam sapiente. Delectus placeat magnam, repudiandae optio ad maxime! Asperiores unde cupiditate tenetur iste ipsa debitis?</p>    
-            </div>
-
-            <div class="imagem-sobre">
-                <img src="arquivos_imagens/sobre-nos.jpg" alt="ilustracao-sobre-nos">
-            </div>
-        </div>
-      
+    <section class="secao-sobre" id="sobre">
+        <h2>Sobre nós</h2>
+        <p>Na CodeHub, somos especialistas em desenvolver software personalizado que impulsiona o crescimento dos nossos clientes.</p>
+        <p>Oferecemos soluções inovadoras e eficientes para empresas que buscam qualidade, segurança e resultados excepcionais.</p>
     </section>
 
-    <section class="nossos-servicos">
-        <h2>Nossos Serviços</h2>
-        <div class="servicos-conteiner">
-            <div class="slides">
-
-                <div class="card">
-                    <img src="arquivos_imagens/slide1.jpg" alt="slide1">
-                </div>
-             
-
-                <div class="card">
-                    <img src="arquivos_imagens/slide2.jpg" alt="slide2">
-                </div>
-            
-                <div class="card">
-                    <img src="arquivos_imagens/slide3.jpg" alt="slide3">
-                </div>
-                
-                <div class="card">
-                    <img src="arquivos_imagens/slide4.jpg" alt="slide4">
-                </div>
-                
-                <div class="card">
-                    <img src="arquivos_imagens/slide5.jpg" alt="slide5">
-                </div>
-                
-                <div class="card">
-                    <img src="arquivos_imagens/slide6.jpg" alt="slide6">
-                </div>
-            </div>
-
+      <footer class="rodape">
+        <div class="redes-sociais">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
         </div>
 
-    </section>
-
-    <section class="contatos">
-        <h2>Contatos</h2>
-        <div class="contatos-icons">
-            <div>
-                <a href="" target="">
-                <img src="arquivos_imagens/Github.png" alt="Github">
-                </a>
-            </div>
-
-            <div>
-                <a href="" target="">
-                <img src="arquivos_imagens/instagram.png" alt="Instagram">
-                </a>
-            </div>
-
-            <div>
-                <a href="" target="">
-                <img src="arquivos_imagens/e-mail.png" alt="E-mail">
-                </a>
-            </div>
-
-            <div>
-                <a href="" target="">
-                <img src="arquivos_imagens/favebook.png" alt="Facebook">
-                </a>
-            </div>
-            
+        <div class="direitos">
+            &copy; 2025 CodeHub Jr. Todos os direitos reservados.
         </div>
-
-        <p>2025 © CodeHub - Todos  os Direitos Reservados</p>
-
-    </section>
+    </footer>
 
 </body>
 </html>

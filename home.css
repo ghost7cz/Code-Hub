@@ -1,13 +1,14 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background: linear-gradient(135deg, #5f1ba3, #1D1D3F);
-    color: #fff;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #1c1c1c;
 }
 
 a {
@@ -15,330 +16,244 @@ a {
     color: inherit;
 }
 
-/* HEADER */
-header {
+/* Cabeçalho */
+.cabecalho {
+    background-color: #6C5DD3;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.cabecalho-navegacao {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Logo à esquerda, menu à direita */
     align-items: center;
-    padding: 20px 50px;
-    flex-wrap: wrap; /* permite quebrar linha em telas pequenas */
-}
-
-header .logo {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #ff33ff;
-}
-
-header nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-header nav a {
-    margin-left: 20px;
-    font-size: 0.9rem;
-    transition: color 0.3s;
-}
-
-header nav a:hover {
-    color: #ff33ff;
-}
-
-header nav .btn {
-    background-color: #ff33ff;
-    padding: 8px 16px;
-    border-radius: 6px;
-    color: #fff;
-}
-
-/* APRESENTAÇÃO */
-.apresentacao {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    flex-wrap: wrap; /* quebra em colunas menores */
-    text-align: center;
-}
-
-.texto-apresentacao {
-    max-width: 600px;
-}
-
-.texto-apresentacao h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.texto-apresentacao h2 {
-    font-size: 1.5rem;
-    color: #ff33ff;
-    margin-bottom: 20px;
-}
-
-.texto-apresentacao p {
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.texto-apresentacao .buttons a {
-    display: inline-block;
-    margin: 5px;
-    padding: 10px 20px;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: all 0.3s;
-}
-
-.texto-apresentacao .buttons .primary {
-    background-color: #ff33ff;
-    color: #fff;
-}
-
-.texto-apresentacao .buttons .secondary {
-    border: 2px solid #fff;
-    color: #fff;
-}
-
-.texto-apresentacao .buttons .primary:hover {
-    background-color: #e600e6;
-}
-
-.texto-apresentacao .buttons .secondary:hover {
-    background-color: #fff;
-    color: #1D1D3F;
-}
-
-/* IMAGEM ILUSTRATIVA */
-.imagen-ilustrativa img {
-    max-width: 100%;
-    border-radius: 20px;
-}
-
-/* NAVBAR SERVICES */
-.services-bar {
-    background-color: #0f4ce0;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.services-bar span {
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-/* TEAM */
-.team {
-    text-align: center;
-    padding: 50px;
-}
-
-.team h2 {
-    margin-bottom: 20px;
-    font-size: 2rem;
-    border: 2px solid #fff;
-    display: inline-block;
-    padding: 10px 38px;
-    border-radius: 8px;
-}
-
-.team-conteiner {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta automaticamente */
+    padding: 0 20px;
     gap: 20px;
-    max-width: 90%;
-    margin: 0 auto;
-}
-
-.menbro {
-    display: flex;
-    align-items: center;
-    padding: 15px 20px;
-    border-radius: 12px;
-    transition: transform 0.2s, box-shadow 0.2s;
-    cursor: pointer;
-    min-height: 100px;
-    background: rgba(255, 255, 255, 0.1);
-}
-
-.menbro:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-.menbro img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-right: 15px;
-    border: 3px solid #fff;
-}
-
-/* SOBRE NÓS */
-.sobre-nos {
-    padding: 60px 20px;
-}
-
-.Sobre-conteiner {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
     flex-wrap: wrap;
-    text-align: center;
 }
 
-.sobre-texto h2 {
-    font-size: 2.2rem;
-    margin-bottom: 20px;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.sobre-texto h2 span {
-    color: #ff33ff;
+.logo img {
+    height: 40px; /* Ajuste o tamanho do logo */
 }
 
-.sobre-texto p {
-    font-size: 1rem;
-    line-height: 1.6;
+.menu-links {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.cabecalho-navegacao a {
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.botao-contato {
+    background-color: #857DFF;
+}
+
+.botao-contato:hover {
+    background-color: #6c5dd3;
+}
+
+.cabecalho-titulo {
+    font-size: 2rem;
+    font-weight: 700;
     margin-bottom: 15px;
 }
 
-.imagem-sobre img {
-    width: 100%;
-    max-width: 320px;
-    border-radius: 50% / 40%;
-    padding: 20px;
+.cabecalho-subtitulo {
+    font-size: 1rem;
+    margin-bottom: 20px;
 }
 
-/* SERVIÇOS */
-.nossos-servicos h2 {
-    font-size: 2.2rem;
-    margin: 30px auto;
-    text-align: center;
-}
-
-.servicos-conteiner {
-    overflow: hidden;
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.slides {
-    display: flex;
-    gap: 40px;
-    width: calc(300px * 6 + 30px * 5);
-    animation: deslizar 20s linear infinite;
-}
-
-.card {
-    flex: 0 0 300px;
-    height: 180px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px #fff;
-    overflow: hidden;
-}
-
-.card img {
-    width: 100%;
-    display: block;
-    border-radius: 10px;
-}
-
-@keyframes deslizar {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
-    }
-}
-
-/* CONTATOS */
-.contatos {
-    margin-top: 20px;
-    background-color: #0f4ce0;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.contatos .contatos-icons {
+.cabecalho-botoes {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.botao-principal {
+    background-color: #857DFF;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-principal:hover {
+    background-color: #6c5dd3;
+}
+
+.botao-secundario {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botao-secundario:hover {
+    background-color: #fff;
+    color: #6c5dd3;
+}
+
+.imagem-destaque {
+    max-width: 100%;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto 50px auto;
+}
+
+ .imagem-container {
+         max-width: 40%; /* Largura máxima da imagem em relação à tela */
+         height: auto;
+         margin: 0 auto;
+        }
+
+        .imagem-container img {
+            width: 100%; /* A imagem se ajusta à largura do container */
+            height: auto; /* Mantém proporção */
+            display: block;
+            border-radius: 10px; /* Opcional: cantos arredondados */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Opcional: sombra leve */
+        }
+
+        @media (max-width: 600px) {
+            .imagem-container {
+                max-width: 100%; /* Em telas pequenas ocupa toda a largura */
+            }
+        }
+
+
+/* Seção Nosso Time */
+.secao-time {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.secao-time h2 {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+}
+
+.cartoes-time {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
     flex-wrap: wrap;
 }
 
-.contatos h2 {
-    margin-bottom: 20px;
-    font-size: 1.2rem;
+.cartao-membro {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
 
-.contatos .contatos-icons img {
-    width: 40px;
-    height: 40px;
+.cartao-membro img {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    object-fit: cover;
-    transition: transform 0.3s;
+    margin-bottom: 15px;
 }
 
-.contatos .contatos-icons img:hover {
-    transform: scale(1.2);
+.cartao-membro h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
 }
 
-.contatos p {
-    margin-top: 6px;
+.cartao-membro p {
     font-size: 0.9rem;
-    opacity: 0.8;
+    color: #555;
 }
 
-/* MEDIA QUERIES */
+/* Seção Sobre Nós */
+.secao-sobre {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.secao-sobre h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.secao-sobre p {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
-    header {
-        padding: 20px;
-        text-align: center;
-    }
-
-    .apresentacao {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .texto-apresentacao h1 {
-        font-size: 2rem;
-    }
-
-    .texto-apresentacao h2 {
-        font-size: 1.2rem;
-    }
-
-    .slides {
-        animation: none; /* em telas pequenas, pode desativar o movimento automático */
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .card {
-        flex: 1 1 250px;
-        height: auto;
-    }
-}
-
-@media (max-width: 480px) {
-    header nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .texto-apresentacao h1 {
-        font-size: 1.8rem;
-    }
-
-    .sobre-texto h2 {
+    .cabecalho-titulo {
         font-size: 1.6rem;
     }
+
+    .cartoes-time {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
 }
+
+.rodape {
+            background-color: #111; /* Preto escuro */
+            color: #fff; /* Texto branco */
+            padding: 40px 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .rodape a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .rodape a:hover {
+            text-decoration: underline;
+        }
+
+        .rodape .links, .rodape .redes-sociais {
+            margin-bottom: 20px;
+        }
+
+        .rodape .direitos {
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        /* Responsivo */
+        @media (max-width: 600px) {
+            .rodape {
+                padding: 30px 10px;
+            }
+            .rodape a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
