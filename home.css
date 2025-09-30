@@ -16,7 +16,6 @@ a {
     color: inherit;
 }
 
-/* Cabeçalho */
 .cabecalho {
     background-color: #6C5DD3;
     color: #fff;
@@ -26,7 +25,7 @@ a {
 
 .cabecalho-navegacao {
     display: flex;
-    justify-content: space-between; /* Logo à esquerda, menu à direita */
+    justify-content: space-between; 
     align-items: center;
     padding: 0 20px;
     gap: 20px;
@@ -40,7 +39,7 @@ a {
 }
 
 .logo img {
-    height: 40px; /* Ajuste o tamanho do logo */
+    height: 40px; 
 }
 
 .menu-links {
@@ -124,27 +123,27 @@ a {
 }
 
  .imagem-container {
-         max-width: 40%; /* Largura máxima da imagem em relação à tela */
+         max-width: 40%; 
          height: auto;
          margin: 0 auto;
         }
 
         .imagem-container img {
-            width: 100%; /* A imagem se ajusta à largura do container */
-            height: auto; /* Mantém proporção */
+            width: 100%; 
+            height: auto; 
             display: block;
-            border-radius: 10px; /* Opcional: cantos arredondados */
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Opcional: sombra leve */
+            border-radius: 10px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
         }
 
         @media (max-width: 600px) {
             .imagem-container {
-                max-width: 100%; /* Em telas pequenas ocupa toda a largura */
+                max-width: 100%; 
             }
         }
 
 
-/* Seção Nosso Time */
+
 .secao-time {
     text-align: center;
     padding: 50px 20px;
@@ -189,7 +188,7 @@ a {
     color: #555;
 }
 
-/* Seção Sobre Nós */
+
 .secao-sobre {
     padding: 50px 20px;
     max-width: 900px;
@@ -207,7 +206,7 @@ a {
     color: #333;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     .cabecalho-titulo {
         font-size: 1.6rem;
@@ -221,8 +220,8 @@ a {
 }
 
 .rodape {
-            background-color: #111; /* Preto escuro */
-            color: #fff; /* Texto branco */
+            background-color: #111; 
+            color: #fff; 
             padding: 40px 20px;
             text-align: center;
             font-family: Arial, sans-serif;
@@ -246,8 +245,7 @@ a {
             font-size: 14px;
             color: #aaa;
         }
-
-        /* Responsivo */
+        
         @media (max-width: 600px) {
             .rodape {
                 padding: 30px 10px;
