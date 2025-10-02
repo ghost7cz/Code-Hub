@@ -260,6 +260,13 @@ a {
         white-space: nowrap;
     }
 
+    .menu-links {
+        gap: 8px;
+        font-size: 0.08;
+    
+    }
+
+
     .botao-sobrenos{
         white-space: nowrap;
         
