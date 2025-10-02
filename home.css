@@ -258,7 +258,11 @@ a {
         padding: 6px 12px;
         font-size: 0.10rem;
         white-space: nowrap;
-        background-color: #111;
+    }
+
+    .botao-sobrenos{
+        white-space: nowrap;
+        
     }
 
     .botao-principal,
