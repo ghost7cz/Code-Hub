@@ -262,14 +262,21 @@ a {
 
     .menu-links {
         gap: 8px;
-        font-size: 0.08;
-    
     }
 
 
     .botao-sobrenos{
         white-space: nowrap;
+        font-size: 14px;
         
+    }
+
+    .botao-contato{
+        font-size: 14px;
+    }
+
+    .botao-servicos{
+        font-size: 14px;
     }
 
     .botao-principal,
